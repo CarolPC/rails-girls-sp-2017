@@ -1,14 +1,21 @@
+<div class="container">
 <p>
+
 	<div class="teste">
-		<strong>Name:</strong>
-		<%= @post.name %>
+		<h1><strong>Nome:</strong></h1>
+		<div class="texto"><%= @post.name %></div>
 	</div>
 
 	<!-- <strong>Date:</strong>
 	<%= @post.birthdate %> -->
 
-	<strong>Bio:</strong>
-	<%= @post.bio %>
+	<h1><strong>Biografia:</strong></h1>
+	<div class="texto">
+		<%= @post.bio %>
+	</div>
 
-	<%= image_tag @post.picture %>
+	<div class="imagem">
+	<%= image_tag @post.picture.url(:medium)%>
+	</div>
 </p>
+</div>

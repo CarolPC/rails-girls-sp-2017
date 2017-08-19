@@ -1,9 +1,12 @@
+<body>
+<h1 class="titulo">Mulheres FODAS da Tecnologia</h1>
 <% @posts.each do |post| %>
-
-
+		
 		<%= link_to post do %>
-			<%= image_tag post.picture.url(:medium) %>
-		<% end %>
-	
+		<div class="imagem">
+			<%= image_tag post.picture.url(:thumb) %>
+		</div>
+<% end %>
 
 <% end %>
+</body>
