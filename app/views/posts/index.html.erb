@@ -1,0 +1,9 @@
+<% @posts.each do |post| %>
+
+
+		<%= link_to post do %>
+			<%= image_tag post.picture.url(:medium) %>
+		<% end %>
+	
+
+<% end %>
