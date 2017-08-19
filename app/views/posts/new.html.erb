@@ -1,0 +1,27 @@
+<h1>Hi</h1>
+
+<%= form_for :posts, url: posts_path do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+
+	<p>
+		<%= f.label :birthdate %>
+		<%= f.text_field :birthdate %>
+	</p>
+
+	<p>
+		<%= f.label :bio %>
+		<%= f.text_area :bio %>
+	</p>
+
+	<p>
+		<%= f.label :picture %>
+		<%= f.file_field :picture %>
+	</p>
+
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
